@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sewa Apartemen Tangerang | LuxeSpace</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <nav class="bg-white shadow-md p-4 sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-blue-600">LuxeSpace</h1>
+            <div class="text-sm font-medium text-gray-500">Katalog Tangerang</div>
+        </div>
+    </nav>
+
+    <header class="bg-blue-600 py-12 text-center text-white">
+        <h2 class="text-3xl font-bold">Apartemen Pilihan di Tangerang</h2>
+        <p class="mt-2 opacity-90">Hunian strategis di Cikokol, BSD, dan Serpong</p>
+    </header>
+
+    <section class="container mx-auto py-12 px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+            
+            <div class="bg-white rounded-2xl shadow-md overflow-hidden flex flex-col md:flex-row">
+                <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=500&q=80" class="w-full md:w-48 object-cover" alt="Treepark City">
+                <div class="p-6 flex-1">
+                    <span class="text-xs font-bold text-orange-500 uppercase">Cikokol</span>
+                    <h4 class="text-xl font-bold mb-2">Apartemen Treepark City</h4>
+                    <p class="text-gray-500 text-sm mb-4">Lokasi strategis dekat Tangcity Mall & akses tol Jakarta-Merak.</p>
+                    <button onclick="chatWA('Treepark City Cikokol')" class="w-full bg-green-500 text-white py-2 rounded-lg font-bold hover:bg-green-600 transition">
+                        <i class="fa-brands fa-whatsapp"></i> Tanya Admin
+                    </button>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-md overflow-hidden flex flex-col md:flex-row">
+                <img src="https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=500&q=80" class="w-full md:w-48 object-cover" alt="Sky House BSD">
+                <div class="p-6 flex-1">
+                    <span class="text-xs font-bold text-orange-500 uppercase">BSD City</span>
+                    <h4 class="text-xl font-bold mb-2">Apartemen Sky House BSD</h4>
+                    <p class="text-gray-500 text-sm mb-4">Samping AEON Mall BSD. Fasilitas smart home dan taman luas.</p>
+                    <button onclick="chatWA('Sky House BSD')" class="w-full bg-green-500 text-white py-2 rounded-lg font-bold hover:bg-green-600 transition">
+                        <i class="fa-brands fa-whatsapp"></i> Tanya Admin
+                    </button>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-md overflow-hidden flex flex-col md:flex-row">
+                <img src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&w=500&q=80" class="w-full md:w-48 object-cover" alt="Collins Boulevard">
+                <div class="p-6 flex-1">
+                    <span class="text-xs font-bold text-orange-500 uppercase">Serpong Raya</span>
+                    <h4 class="text-xl font-bold mb-2">Apartemen Collins Boulevard</h4>
+                    <p class="text-gray-500 text-sm mb-4">Hunian mewah konsep Art Deco. Dekat Binus & Summarecon Mall.</p>
+                    <button onclick="chatWA('Collins Boulevard')" class="w-full bg-green-500 text-white py-2 rounded-lg font-bold hover:bg-green-600 transition">
+                        <i class="fa-brands fa-whatsapp"></i> Tanya Admin
+                    </button>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-md overflow-hidden flex flex-col md:flex-row">
+                <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=500&q=80" class="w-full md:w-48 object-cover" alt="Treepark Serpong">
+                <div class="p-6 flex-1">
+                    <span class="text-xs font-bold text-orange-500 uppercase">BSD CBD</span>
+                    <h4 class="text-xl font-bold mb-2">Apartemen Treepark Serpong</h4>
+                    <p class="text-gray-500 text-sm mb-4">Dekat Eka Hospital dan Teras Kota. Suasana tenang dan nyaman.</p>
+                    <button onclick="chatWA('Treepark Serpong BSD')" class="w-full bg-green-500 text-white py-2 rounded-lg font-bold hover:bg-green-600 transition">
+                        <i class="fa-brands fa-whatsapp"></i> Tanya Admin
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="bg-gray-100 py-8 text-center text-gray-500 text-sm">
+        <p>&copy; 2026 LuxeSpace Tangerang. Admin: <strong>Admin Apartemen</strong></p>
+    </footer>
+
+    <script>
+        function chatWA(namaUnit) {
+            const noWa = "6285167055314"; // Nomor admin kamu
+            const adminName = "Admin Apartemen";
+            const pesan = `Halo ${adminName}, saya tertarik untuk sewa unit di *${namaUnit}*. Bisa minta info harga dan ketersediaannya?`;
+            
+            // Membuka WhatsApp di tab baru
+            window.open(`https://wa.me/${noWa}?text=${encodeURIComponent(pesan)}`, '_blank');
+        }
+    </script>
+
+</body>
+</html>
